@@ -12,3 +12,15 @@ java.lang.SecurityException: com.apkpatcher.caustic: One of RECEIVER_EXPORTED or
 
 This has been patched in [3-midi-broadcast-receiver-crash.patch](./patches/3-midi-broadcast-receiver-crash.patch).
 Future patches can be made if needed using the patching pipeline in this repository.
+
+## Usage
+
+**Requirements:**
+
+* Downloaded APK (see `Manifest-apk.txt` for URL)
+* Linux machine with Python 3
+* Android build tools in the `PATH`
+* ADB enabled on a Android device
+
+Run `./patch-caustic.py` then `adb install Caustic_3_patched.apk`.
+Don't erase `patchkey.jks` once created, otherwise future `adb install` will fail with a mismatched key (you will need to uninstall the patched apk).

@@ -19,7 +19,7 @@ Future patches can be made if needed using the patching pipeline in this reposit
 
 * Downloaded APK (see `Manifest-apk.txt` for URL)
 * Linux machine with Python 3
-* Android build tools in the `PATH`
+* Android build tools in the `PATH` and `keytool`. Run `./apk_patch_pipeline.py check` to verify you have all the needed tools
 * ADB enabled on a Android device
 
 Run `./patch-caustic.py` then `adb install Caustic_3_patched.apk`.

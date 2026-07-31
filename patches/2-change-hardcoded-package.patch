@@ -1,0 +1,9 @@
+--- a/smali/com/singlecellsoftware/caustic/CausticActivity.smali
++++ b/smali/com/singlecellsoftware/caustic/CausticActivity.smali
+@@ -1489,5 +1489,5 @@
+-    const-string v1, "com.singlecellsoftware.caustic"
++    const-string v1, "com.apkpatcher.caustic"
+
+     invoke-virtual {v0, v1, v3}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+
+     move-result-object v0

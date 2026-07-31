@@ -1,0 +1,7 @@
+--- a/smali/com/singlecellsoftware/caustic/midi/USBConnectionScanner.smali
++++ b/smali/com/singlecellsoftware/caustic/midi/USBConnectionScanner.smali
+@@ -1,1 +1,1 @@
+-    invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
++    const/4 v3, 0x4
++
++    invoke-virtual {v1, v2, v0, v3}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;I)Landroid/content/Intent;
